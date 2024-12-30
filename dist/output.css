@@ -558,8 +558,8 @@ video {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 @media (min-width: 640px) {
@@ -627,7 +627,7 @@ video {
 }
 
 .main-title::before,
-      .main-title::after {
+  .main-title::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -909,7 +909,8 @@ video {
   padding: 1.25rem;
 }
 
-.articles .box .info a , .articles .box .info i {
+.articles .box .info a,
+  .articles .box .info i {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(33 150 243 / var(--tw-text-opacity, 1));
@@ -1026,7 +1027,7 @@ video {
   bottom: -20px;
   left: 15px;
   height: 5px;
-  width: calc(100% - 30px)
+  width: calc(100% - 30px);
 }
 
 .features .box p {
@@ -1202,7 +1203,7 @@ video {
 }
 
 .team .box::before,
-      .team .box::after {
+  .team .box::after {
   content: "";
   position: absolute;
   right: 0px;
@@ -1618,7 +1619,7 @@ video {
 }
 
 .pricing .box::before,
-      .pricing .box::after {
+  .pricing .box::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1641,7 +1642,8 @@ video {
   bottom: 0px;
 }
 
-.pricing .box:hover::before,.pricing .box:hover::after {
+.pricing .box:hover::before,
+  .pricing .box:hover::after {
   width: 100%;
 }
 
@@ -1795,7 +1797,7 @@ video {
 }
 
 .stats .box::before,
-      .stats .box::after {
+  .stats .box::after {
   content: "";
   position: absolute;
   height: 0px;
@@ -1817,7 +1819,8 @@ video {
   bottom: 0px;
 }
 
-.stats .box:hover::before ,.stats .box:hover::after {
+.stats .box:hover::before,
+  .stats .box:hover::after {
   height: 100%;
 }
 
@@ -1976,6 +1979,7 @@ video {
   position: fixed;
   bottom: 1.75rem;
   right: 1.75rem;
+  z-index: 50;
   display: none;
   height: 2.5rem;
   width: 2.5rem;
@@ -2014,6 +2018,10 @@ video {
 
 .z-\[1\] {
   z-index: 1;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .m-0 {
@@ -2269,6 +2277,10 @@ video {
 .divide-\[\#444\] > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(68 68 68 / var(--tw-divide-opacity, 1));
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-none {
@@ -2546,7 +2558,7 @@ video {
   border-style: solid;
   border-width: 0px 0px 170px 500px;
   border-color: transparent transparent white transparent;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .features .box:hover .img-holder::after {
@@ -2567,7 +2579,7 @@ video {
   height: 30px;
   z-index: 1;
   background-image: linear-gradient(135deg, white 25%, transparent 25%),
-        linear-gradient(225deg, white 25%, transparent 25%);
+      linear-gradient(225deg, white 25%, transparent 25%);
   background-size: 30px 30px;
 }
 
@@ -2690,6 +2702,11 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:mt-1 {
     margin-top: 0.25rem;
   }
