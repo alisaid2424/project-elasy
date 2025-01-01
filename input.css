@@ -5,7 +5,7 @@
 @layer components {
   /* Start main title */
   .main-title {
-    @apply mx-auto mb-[80px] uppercase border-2 border-black hover:border-white py-3 px-5 cursor-pointer text-3xl w-fit relative z-[1] hover:delay-[0.5s] hover:text-white  transition-all duration-300;
+    @apply mx-auto mb-[80px] uppercase border-2 border-black hover:border-white py-3 px-5 cursor-pointer text-xl sm:text-3xl w-fit relative z-[1] hover:delay-[0.5s] hover:text-white  transition-all duration-300;
   }
   .main-title::before,
   .main-title::after {
@@ -28,7 +28,7 @@
   /* End main title */
   /* Start Header */
   .header .main-nav > li > a {
-    @apply flex items-center justify-center h-10 sm:h-[72px] relative text-black p-3 sm:px-7 text-sm sm:text-[18px] overflow-hidden hover:text-primary hover:bg-[#fafafa]  transition-all duration-300;
+    @apply flex items-center justify-center h-10 sm:h-[72px] relative text-black p-3 sm:px-7 text-xs sm:text-[18px] overflow-hidden hover:text-primary hover:bg-[#fafafa]  transition-all duration-300;
   }
   .header .main-nav > li > a::before {
     content: "";
@@ -174,10 +174,10 @@
   /* End Features */
   /* Start Testimonials */
   .testimonials .box {
-    @apply p-5 bg-white shadow-sm rounded-md relative;
+    @apply p-2 sm:p-5 bg-white shadow-sm rounded-md relative;
   }
   .testimonials .box img {
-    @apply absolute top-[-20px] right-[-20px]  w-[100px] h-[100px] rounded-full border-8 border-backsection;
+    @apply absolute -top-2 -right-2 sm:-top-5 sm:-right-5 w-16 h-16 sm:w-[100px] sm:h-[100px] rounded-full border-2 border-backsection;
   }
   .testimonials .box h3 {
     @apply mb-[10px];
@@ -280,7 +280,7 @@
     @apply text-xs border border-gray-200 py-[3px] px-[5px] rounded text-primary;
   }
   .our-skills .skill .the-progress {
-    @apply h-7 bg-gray-200 relative;
+    @apply h-5 sm:h-7 bg-gray-200 relative;
   }
   .our-skills .skill .the-progress span {
     @apply absolute left-0 top-0 h-full bg-primary transition-all duration-500;
@@ -288,7 +288,7 @@
   /* End Our Skills */
   /* Start Worksteps */
   .work-steps .info .box {
-    @apply bg-[#f6f5f5] p-7 mb-5 rounded-md flex flex-col sm:flex-row items-center border-2 border-white text-center gap-5 cursor-pointer sm:text-start relative z-[1];
+    @apply bg-[#f6f5f5] p-2 sm:p-7 mb-5 rounded-md flex flex-col sm:flex-row items-center border-2 border-white text-center gap-5 cursor-pointer sm:text-start relative z-[1];
   }
   .work-steps .info .box::before {
     content: "";
@@ -304,16 +304,16 @@
   /* End Worksteps */
   /* Start Events */
   .events .info .time .unit {
-    @apply border border-[#d4d4d4] hover:border-primary rounded-md text-center w-[80px] transition-all duration-300;
+    @apply border border-[#d4d4d4] hover:border-primary rounded-md text-center w-12 sm:w-20 transition-all duration-300;
   }
   .events .info .time .unit span {
     @apply block cursor-pointer transition-all duration-300;
   }
   .events .info .time .unit span:first-child {
-    @apply text-3xl p-4 text-primary font-bold;
+    @apply text-[18px] sm:text-3xl p-2 sm:p-4 text-primary font-bold;
   }
   .events .info .time .unit span:last-child {
-    @apply px-3 py-2 text-xs  border-t border-[#d4d4d4];
+    @apply px-2 sm:px-3 py-1 sm:py-2 text-[9px] sm:text-xs  border-t border-[#d4d4d4];
   }
   .events .info .time .unit:hover span:last-child {
     @apply border-primary;
@@ -509,6 +509,13 @@
   .dots-down {
     bottom: 30px;
     left: 0;
+  }
+
+  @media (max-width: 767px) {
+    .dots {
+      height: 90px;
+      width: 102px;
+    }
   }
   /* End Global Rules */
 }

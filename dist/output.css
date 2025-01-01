@@ -558,8 +558,8 @@ video {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (min-width: 640px) {
@@ -610,8 +610,8 @@ video {
   padding-bottom: 0.75rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   text-transform: uppercase;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -624,6 +624,13 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   transition-delay: 0.5s;
+}
+
+@media (min-width: 640px) {
+  .main-title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 .main-title::before,
@@ -706,8 +713,8 @@ video {
   justify-content: center;
   overflow: hidden;
   padding: 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
   transition-property: all;
@@ -1152,22 +1159,37 @@ video {
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-  padding: 1.25rem;
+  padding: 0.5rem;
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+@media (min-width: 640px) {
+  .testimonials .box {
+    padding: 1.25rem;
+  }
+}
+
 .testimonials .box img {
   position: absolute;
-  top: -20px;
-  right: -20px;
-  height: 100px;
-  width: 100px;
+  top: -0.5rem;
+  right: -0.5rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 9999px;
-  border-width: 8px;
+  border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(236 236 236 / var(--tw-border-opacity, 1));
+}
+
+@media (min-width: 640px) {
+  .testimonials .box img {
+    top: -1.25rem;
+    right: -1.25rem;
+    height: 100px;
+    width: 100px;
+  }
 }
 
 .testimonials .box h3 {
@@ -1461,9 +1483,15 @@ video {
 
 .our-skills .skill .the-progress {
   position: relative;
-  height: 1.75rem;
+  height: 1.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+
+@media (min-width: 640px) {
+  .our-skills .skill .the-progress {
+    height: 1.75rem;
+  }
 }
 
 .our-skills .skill .the-progress span {
@@ -1497,13 +1525,14 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
   background-color: rgb(246 245 245 / var(--tw-bg-opacity, 1));
-  padding: 1.75rem;
+  padding: 0.5rem;
   text-align: center;
 }
 
 @media (min-width: 640px) {
   .work-steps .info .box {
     flex-direction: row;
+    padding: 1.75rem;
     text-align: start;
   }
 }
@@ -1549,7 +1578,7 @@ video {
 /* Start Events */
 
 .events .info .time .unit {
-  width: 80px;
+  width: 3rem;
   border-radius: 0.375rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -1565,6 +1594,12 @@ video {
   border-color: rgb(33 150 243 / var(--tw-border-opacity, 1));
 }
 
+@media (min-width: 640px) {
+  .events .info .time .unit {
+    width: 5rem;
+  }
+}
+
 .events .info .time .unit span {
   display: block;
   cursor: pointer;
@@ -1574,24 +1609,41 @@ video {
 }
 
 .events .info .time .unit span:first-child {
-  padding: 1rem;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  padding: 0.5rem;
+  font-size: 18px;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(33 150 243 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 640px) {
+  .events .info .time .unit span:first-child {
+    padding: 1rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 .events .info .time .unit span:last-child {
   border-top-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(212 212 212 / var(--tw-border-opacity, 1));
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-size: 0.75rem;
-  line-height: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 9px;
+}
+
+@media (min-width: 640px) {
+  .events .info .time .unit span:last-child {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 .events .info .time .unit:hover span:last-child {
@@ -2016,12 +2068,12 @@ video {
   top: -20px;
 }
 
-.z-\[1\] {
-  z-index: 1;
-}
-
 .z-50 {
   z-index: 50;
+}
+
+.z-\[1\] {
+  z-index: 1;
 }
 
 .m-0 {
@@ -2133,6 +2185,10 @@ video {
 
 .w-\[600px\] {
   width: 600px;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-fit {
@@ -2338,6 +2394,11 @@ video {
   background-color: rgb(246 245 245 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#f6f6f6\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 246 246 / var(--tw-bg-opacity, 1));
+}
+
 .bg-backsection {
   --tw-bg-opacity: 1;
   background-color: rgb(236 236 236 / var(--tw-bg-opacity, 1));
@@ -2434,6 +2495,11 @@ video {
   font-family: Cairo, sans-serif;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -2444,25 +2510,18 @@ video {
   line-height: 1;
 }
 
-.text-\[18px\] {
-  font-size: 18px;
-}
-
 .text-\[27px\] {
   font-size: 27px;
-}
-
-.text-\[28px\] {
-  font-size: 28px;
-}
-
-.text-\[40px\] {
-  font-size: 40px;
 }
 
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -2601,6 +2660,13 @@ video {
   left: 0;
 }
 
+@media (max-width: 767px) {
+  .dots {
+    height: 90px;
+    width: 102px;
+  }
+}
+
 /* End Global Rules */
 
 .placeholder\:transition-opacity::-moz-placeholder {
@@ -2640,6 +2706,10 @@ video {
 
   .sm\:h-\[72px\] {
     height: 72px;
+  }
+
+  .sm\:w-\[500px\] {
+    width: 500px;
   }
 
   .sm\:w-\[600px\] {
@@ -2690,8 +2760,18 @@ video {
     line-height: 2rem;
   }
 
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .sm\:text-\[40px\] {
     font-size: 40px;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
